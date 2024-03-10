@@ -1,0 +1,21 @@
+<patterndb version='5' pub_date='2024-03-08'>
+	<ruleset name='pfsense' id='23457890'>
+		<pattern>pfsense</pattern>
+            <rules>
+                <rule provider='me' id='182437592347598' class='system'>
+                    <patterns>
+                        <pattern>Accepted @QSTRING:SSH.AUTH_METHOD: @ for@QSTRING:SSH_USERNAME: @from\ @QSTRING:SSH_CLIENT_ADDRESS: @port @NUMBER:SSH_PORT_NUMBER:@ ssh2</pattern>
+                    </patterns>
+                </rule>
+	        <rule provider='me' id='pfsense-udp' class='pfsense'>
+		  <patterns>
+			<pattern>@NUMBER:PRI@,,,@NUMBER:rule@,@ESTRING:interface:,@@ESTRING:reason:,@@ESTRING:action:,@@ESTRING:direction:,@@ESTRING:ipVersion:,@@ESTRING:tos:,@@ESTRING:enc:,@@ESTRING:ttl:,@@ESTRING:id:,@@ESTRING:offset:,@@ESTRING:ip-flag:,@17,@ESTRING:protocol:,@@ESTRING:data_length:,@@ESTRING:src_ip:,@@ESTRING:dst_ip:,@@ESTRING:src_port:,@@ESTRING:dst_port:,@@ANYSTRING:data_length@</pattern>
+			<pattern>@NUMBER:PRI@,,,@NUMBER:rule@,@ESTRING:interface:,@@ESTRING:reason:,@@ESTRING:action:,@@ESTRING:direction:,@@ESTRING:ipVersion:,@@ESTRING:tos:,@@ESTRING:enc:,@@ESTRING:ttl:,@@ESTRING:id:,@@ESTRING:offset:,@@ESTRING:ip-flag:,@6,@ESTRING:protocol:,@@ESTRING:data_length:,@@ESTRING:src_ip:,@@ESTRING:dst_ip:,@@ESTRING:src_port:,@@ESTRING:dst_port:,@@ESTRING:data_length:,@@ESTRING:tcp-flags:,@@ESTRING:sequence-number:,@@ESTRING:ack-number:,@@ESTRING:tcp-window:,@@ESTRING:urg:,@@ANYSTRING:tcp-options@</pattern>
+			<pattern>@NUMBER:PRI@,,,@NUMBER:rule@,@ESTRING:interface:,@@ESTRING:reason:,@@ESTRING:action:,@@ESTRING:direction:,@@ESTRING:ipVersion:,@@ESTRING:tos:,@@ESTRING:enc:,@@ESTRING:ttl:,@@ESTRING:id:,@@ESTRING:offset:,@@ESTRING:ip-flag:,@1,@ESTRING:protocol:,@@ESTRING:data_length:,@@ESTRING:src_ip:,@@ESTRING:dst_ip:,@@ESTRING:icmp-type:,@@ESTRING:mystery:,@@ANYSTRING@</pattern>
+                  </patterns>
+                </rule>
+
+            </rules>
+    </ruleset>
+</patterndb>
+
