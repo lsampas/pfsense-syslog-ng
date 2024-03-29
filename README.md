@@ -1,5 +1,7 @@
 # pfsense-syslog-ng
-syslog-ng parser for pfsense logs that can run on a Raspberry Pi 4 and probably any x86/x64 distro as well.
+syslog-ng parser for pfsense logs that can run on a Raspberry Pi 4 (Ubuntu 22 tested) and probably any x86/x64 distro as well.
+
+THERE IS NO GUARANTEE THAT I AM PARSING CORRECTLY. I usually get at least one field wrong, and will correct after I notice.
 
 Basic syslog-ng patterndb parser for syslog-ng. Tested using pfsense 2.7.2-RELEASE and syslog-ng 3.35.1 on (separate machine) Ubuntu-Arch on RasPi. It should definitely run on syslog-ng 4+, but I can't get it to compile for Ubuntu Arch/RasPi yet. 
 pfsense set to syslog (RFC 5424, with RFC 3339 microsecond-precision timestamp.)
